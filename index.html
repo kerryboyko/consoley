@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+
+    </head>
+    
+    <body>
+<H1>Consoley!</H1>
+<p><em>v. 0.001 alpha</em></p>
+<P>This is Consoley, a tookit for beginning Debian users, (and users of Debian-based distros, like Ubuntu and Linux Mint), to install some of the most popular and useful programs for Linux.</P>
+
+<P>Click on the checkboxes of the programs you want to install, then copy-and-paste the resulting code into your terminal.  You'll install all these programs in just one shot!</P>
+
+<HR>
+If you like this tool, please check out <a href="https://sendthisguytocodecamp.com">SendThisGuyToCodeCamp.com</a>
+<HR>
+<P>Copy this code &amp; run it in the terminal</P>
+<code id="installCode"></code>
+
+        <form name="checkboxes">
+
+<h3>Editors &amp; Word Processors</h3>
+<h4>Text Editors (console)</h4>
+            <input class="aptget" type="checkbox" id="emacs">Emacs</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="nano">Nano</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="vim">Vim</input>
+            <BR />
+
+<h4>Text Editors (graphical)</h4>
+            <input class="aptget" type="checkbox" id="kwrite">kWrite - simple text editor (KDE)</input>
+            <BR /> 
+            <input class="aptget" type="checkbox" id="kate">Kate</input>
+            <BR />            
+            <input class="aptget" type="checkbox" id="geany">Geany</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="geany">Geany</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="focuswriter">FocusWriter - Fullscreen distraction-free writing program</input>
+            <BR />
+<h4>Word Processors</h4>
+            <input class="aptget" type="checkbox" id="abiword">Abiword - efficient, featureful word processor with collaboration</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="libreoffice-writer">LibreOffice Writer</input>
+            <BR />
+<h4>Spreadsheets</h4>
+            <input class="aptget" type="checkbox" id="libreoffice-calc">LibreOffice Writer</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="libreoffice-writer">LibreOffice Writer</input>
+            <BR />
+
+
+
+<h3>Productivity Boosters</h3>
+
+            <input class="aptget" type="checkbox" id="autokey-gtk">Autokey (Gnome version)</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="autokey-qt">Autokey (KDE version)</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="gnome-do gnome-do-plugins">Gnome Do</input>
+            <BR />
+
+<h3>Web Browsers</h3>
+
+            <input class="aptget" type="checkbox" id="iceweasel">IceWeasel (Fully Open Firefox-like browser)</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="chrome">Chromium (Fully Open Chrome-like browser)</input>
+            <BR />
+
+<h3>Web Page/Site Editors (GUI based.)</h3>
+
+            <input class="aptget" type="checkbox" id="bluefish">Bluefish</input>
+            <BR />
+
+
+
+            
+<h3>Communications</h3>
+
+            <input class="aptget" type="checkbox" id="xchat">Xchat</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="pidgin">Pidgin</input>
+            <BR />
+            <input class="aptget" type="checkbox" id="kopete">Kopete</input>
+            <BR />
+<h3>Audio-Visual</h3>
+            <input class="aptget" type="checkbox" id="vlc">vlc</input>
+            <BR />
+        </form>
+
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/consoley.js"></script>
+
+</html>
