@@ -1,11 +1,12 @@
 var aptgetString = "sudo apt-get install ";
 var installNames = [];
 
-
+var myPackages = jQuery.get('packages.json');
+console.log(JSON.stringify(myPackages));
 
 var allPackages = function(list){ // takes an array of objects from JSON
     var checkboxGenerator = "";
-    for (var i = 0; i < list.length; i++)
+    for (var i = 0; i < list.length; i++) {
         if(list[i].repo == "heading"){
             checkboxGenerator = checkboxGenerator + '<H3>' + list[i].engName + '</H3>';
         }
