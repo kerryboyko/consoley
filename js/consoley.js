@@ -1,9 +1,15 @@
 var aptgetString = "sudo apt-get install ";
 var installNames = [];
-var myPackages = $.getJSON('http://brianboyko.github.io/consoley/packages.json', function(){
-    console.log('success');
-});
-console.log(JSON.stringify(myPackages));
+$.ajax(
+    type:'GET',
+    url:"http://brianboyko.github.io/consoley/packages.json",
+    data:"format=json",
+    success:function(jsondata) {
+        console.log(jsondata);
+    },
+    dataType:'jsonp'
+);
+
 
 var allPackages = function(list){ // takes an array of objects from JSON
     var checkboxGenerator = "";
