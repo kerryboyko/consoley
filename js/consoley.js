@@ -1,14 +1,18 @@
 var aptgetString = "sudo apt-get install ";
 var installNames = [];
-$.ajax(
-    type:'GET',
-    url:"http://brianboyko.github.io/consoley/packages.json",
-    data:"format=json",
-    success:function(jsondata) {
-        console.log(jsondata);
-    },
-    dataType:'jsonp'
-);
+var listOfPackages = [];
+
+
+var jsonLoad = function(){
+    var packages = [];
+    $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(result){
+        $.each(result, function(i, field){
+            packages.push(field);
+        });
+        listOfPackages = packages;
+    });
+};
+
 
 
 var allPackages = function(list){ // takes an array of objects from JSON
@@ -25,6 +29,8 @@ var allPackages = function(list){ // takes an array of objects from JSON
 };//end allPackages()
 
 window.onload = function() {
+    jsonLoad();
+    console.log(listOfPackages)
     var boxes = document.forms["checkboxes"];
     boxes.addEventListener("click", generateApt, true);
     var elements = document.getElementsByClassName('aptget');
