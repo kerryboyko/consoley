@@ -1,7 +1,8 @@
 var aptgetString = "sudo apt-get install ";
 var installNames = [];
-
-var myPackages = jQuery.get('packages.json');
+var myPackages = $.getJSON('http://brianboyko.github.io/consoley/packages.json', function(){
+    console.log('success');
+});
 console.log(JSON.stringify(myPackages));
 
 var allPackages = function(list){ // takes an array of objects from JSON
