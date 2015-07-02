@@ -1,5 +1,20 @@
 var aptgetString = "sudo apt-get install ";
-var installNames = []
+var installNames = [];
+
+
+
+var allPackages = function(list){ // takes an array of objects from JSON
+    var checkboxGenerator = "";
+    for (var i = 0; i < list.length; i++)
+        if(list[i].repo == "heading"){
+            checkboxGenerator = checkboxGenerator + '<H3>' + list[i].engName + '</H3>';
+        }
+        else{
+            checkboxGenerator = checkboxGenerator + '<img src="images/' + list[i].pakName + '.png" />"' + '<input class="' + list[i].repo + '" type="checkbox" id="' + list[i].pakName + '">' + list[i].engName + '</input>' + '<p>' + list[i].description + '</p><br />';
+        };//endif
+    };//endfor
+        return checkboxGenerator; // returns a string.
+};//end allPackages()
 
 window.onload = function() {
     var boxes = document.forms["checkboxes"];
