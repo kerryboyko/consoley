@@ -36,7 +36,7 @@
     "description":"Text/Voice/Video multi-protocol communication client that works with Google Talk"
   },
   "Editors:": {
-    "repo":"heading",
+    "repo":"heading",a
     "engName":"Editors:",
     "pakName":"",
     "description":""
@@ -143,10 +143,10 @@
     "pakName":"",
     "description":""
   },
-  "Mozilla-thunderbird": {
+  "mozilla-thunderbird": {
     "repo":"ubuntu",
     "engName":"Thunderbird",
-    "pakName":"Mozilla-thunderbird",
+    "pakName":"mozilla-thunderbird",
     "description":"Powerful Email/NNTP/RSS client"
   },
   "icedove": {
@@ -155,10 +155,10 @@
     "pakName":"icedove",
     "description":"Powerful Email/NNTP/RSS client – (FLOSS-only Thunderbird fork)"
   },
-  "Claws-mail": {
+  "claws-mail": {
     "repo":"aptget",
     "engName":"Claws",
-    "pakName":"Claws-mail",
+    "pakName":"claws-mail",
     "description":"E-mail client"
   },
   "geary": {
@@ -167,10 +167,10 @@
     "pakName":"geary",
     "description":"E-mail client with emphasis on user interface"
   },
-  "Gmail-notify": {
+  "gmail-notify": {
     "repo":"aptget",
     "engName":"Gmail-notify",
-    "pakName":"Gmail-notify",
+    "pakName":"gmail-notify",
     "description":"Notification program for new Gmail"
   },
   "kmail": {
@@ -233,10 +233,10 @@
     "pakName":"gnome",
     "description":"GNOME Window Environment"
   },
-  "Kde-standard": {
+  "kde-standard": {
     "repo":"aptget",
     "engName":"KDE",
-    "pakName":"Kde-standard",
+    "pakName":"kde-standard",
     "description":"KDE Window Environment"
   },
   "lxde": {
