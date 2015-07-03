@@ -4,33 +4,51 @@ var listOfPackages = [];
 
 
 var jsonLoad = function(){
-    var packages = [];
-    $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(result){
-        $.each(result, function(i, field){
-            packages.push(field);
-        });
-        listOfPackages = packages;
-    });
+    listOfPackages = $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(result){});
 };
 
+
+$.getJSON( "http://brianboyko.github.io/consoley/packages.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    if(val.repo == "heading"){
+        items.push( "<h3>"+ val.engName + "</h3>" );
+    }
+    else{
+        items.push( '<img src="images/' + val.pakName + '.png" />"' + '<input class="' + val.repo + '" type="checkbox" id="' + val.pakName + '">' + val.engName + '</input>' + '<p>' + val.description + '</p><br />' );
+    }
+
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( document.getElementById('checkboxes') );
+});
 
 
 var allPackages = function(list){ // takes an array of objects from JSON
     var checkboxGenerator = "";
-    for (var i = 0; i < list.length; i++) {
+    console.log("is it getting here");
+    list.forEach(function(){
         if(list[i].repo == "heading"){
-            checkboxGenerator = checkboxGenerator + '<H3>' + list[i].engName + '</H3>';
+            var newdiv = document.createElement('h3');
+            newdiv.innerHTML = list[i].engName;
+            document.getElementbyId('checkboxes').appendChild(newdiv);
         }
         else{
-            checkboxGenerator = checkboxGenerator + '<img src="images/' + list[i].pakName + '.png" />"' + '<input class="' + list[i].repo + '" type="checkbox" id="' + list[i].pakName + '">' + list[i].engName + '</input>' + '<p>' + list[i].description + '</p><br />';
+            var newdiv = document.createElement('div');
+            newdiv.innerHTML = '<img src="images/' + list[i].pakName + '.png" />"' + '<input class="' + list[i].repo + '" type="checkbox" id="' + list[i].pakName + '">' + list[i].engName + '</input>' + '<p>' + list[i].description + '</p><br />';
+        document.getElementbyId('checkboxes').appendChild(newdiv);
         };//endif
-    };//endfor
+    });
+//endfor
         return checkboxGenerator; // returns a string.
 };//end allPackages()
 
 window.onload = function() {
     jsonLoad();
-    console.log(listOfPackages)
+
     var boxes = document.forms["checkboxes"];
     boxes.addEventListener("click", generateApt, true);
     var elements = document.getElementsByClassName('aptget');
