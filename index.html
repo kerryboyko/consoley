@@ -2,31 +2,50 @@
 <HTML>
     
     <head>
-        
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-
+<link rel="stylesheet" href="css/style.css">
 
     </head>
     
     <body>
 <H1>Consoley!</H1>
-<p><em>v. 0.001 alpha</em></p>
+<p><em>v. 0.002 alpha</em></p>
 <P>This is Consoley, a tookit for beginning Debian users, (and users of Debian-based distros, like Ubuntu and Linux Mint), to install some of the most popular and useful programs for Linux.</P>
 
-<P>As you can see, it doesn't work! But it will soon!</P>
+<P>As you can see, it doesn't work completely! But it will soon!  It generates the code for apt-get packages, but I need to add special code for packages that are not part of the debian apt-get repository. Those have been crossed out for the meantime.</P>
+
+<P>Current bugs on Ubuntu:</P>
+<code>
+Note, selecting 'mate-desktop-environment' instead of 'mate'<BR>
+Note, selecting 'firefox' instead of 'iceweasel'<BR>
+Package icedove is not available, but is referred to by another package.<BR>
+This may mean that the package is missing, has been obsoleted, or<BR>
+is only available from another source<BR>
+<BR>
+Package chromium is not available, but is referred to by another package.<BR>
+This may mean that the package is missing, has been obsoleted, or<BR>
+is only available from another source<BR>
+However the following packages replace it:<BR>
+  chromium-bsu:i386 chromium-bsu<BR>
+
+Package kde-standard is not available, but is referred to by another package.<BR>
+This may mean that the package is missing, has been obsoleted, or<BR>
+is only available from another source<BR>
+
+E: Package 'icedove' has no installation candidate<BR>
+E: Package 'kde-standard' has no installation candidate<BR>
+E: Unable to locate package xfce<BR>
+E: Package 'chromium' has no installation candidate<BR>
+E: Unable to locate package teamviewer<BR>
+
+</code>
 
 <P>Click on the checkboxes of the programs you want to install, then copy-and-paste the resulting code into your terminal.  You'll install all these programs in just one shot!</P>
 
 <HR>
 If you like this tool, please check out <a href="https://sendthisguytocodecamp.com">SendThisGuyToCodeCamp.com</a>
 <HR>
-<P>Copy this code &amp; run it in the terminal</P>
-<code id="installCode"></code>
+<P>Copy this code &amp; run it in the terminal:</P>
+<div id="installCode" class="terminal">&nbsp;</div>
 
         <form id="checkboxes" name="checkboxes">
 

@@ -13,7 +13,7 @@ var jsonLoad = function() {
                 items.push('<img src="images/' + val.pakName +
                     '.png" />' + '<input class="' + val.repo +
                     '" type="checkbox" id="' + val.pakName +
-                    '">' + val.engName + '</input>' + '<p>' +
+                    '">' + '<span class="' + val.repo +'">' + val.engName + '</span></input>' + '<p>' +
                     val.description + '</p><br />');
             }
         });

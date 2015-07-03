@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers);
+
+body{
+	background-color: #A4E3FF;
+}
+
+p{
+	font-family: "Lato", Helvetica, Arial, sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bangers", "Lato", Helvetica, Arial, sans;
+	letter-spacing: 2px;
+	color:yellow;
+
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,  
+    5px 5px 2px #888888;
+}
+
+.aptget {
+   color:blue;
+}
+
+.canonicalpartners, .dpkg, .wget, .ubuntu, .google, .nonfree, .steam{
+	text-decoration: line-through;
+}
+
+.terminal {
+	color:lime;
+	background-color: black;
+	font-family: "Share Tech Mono", monospace;
+}
