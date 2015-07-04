@@ -28,14 +28,14 @@ var jsonLoad = function() {
 window.onload = function() {
     jsonLoad();
     var boxes = document.forms.checkboxes;
-    var elements = document.getElementsByClassName('debian64');
+    var elements = document.getElementsByClassName('aptget');
     boxes.addEventListener("click", generateApt, true);
 };
 
 function generateApt(ev) {
     aptgetString = "sudo apt-get install ";
 
-    var allCheckboxes = document.getElementsByClassName('debian64');
+    var allCheckboxes = document.getElementsByClassName('aptget');
     var noneChecked = true;
     for (var i = 0; i < allCheckboxes.length; i++) {
         if (allCheckboxes[i].checked) {
@@ -46,6 +46,6 @@ function generateApt(ev) {
     if (!noneChecked) {
         document.getElementById("installCode").innerHTML = aptgetString;
     } else {
-        document.getElementById("installCode").innerHTML = " ";
+        document.getElementById("installCode").innerHTML = "&nbsp;";
     }
 }

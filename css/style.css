@@ -1,44 +1,38 @@
-@import url(http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers);
+@import "http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers";
 
-body{
-	background-color: #A4E3FF;
+body {
+    background-color:#A4E3FF
 }
 
-p{
-	font-family: "Lato", Helvetica, Arial, sans;
+p {
+    font-family:"Lato",Helvetica,Arial,sans
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Bangers", "Lato", Helvetica, Arial, sans;
-	letter-spacing: 2px;
-	color:yellow;
-
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000,  
-    5px 5px 2px #888888;
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Bangers","Lato",Helvetica,Arial,sans;
+    letter-spacing:2px;
+    color:#ff0;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,5px 5px 2px #888
 }
 
 .aptget {
-   color:blue;
+    color:blue
 }
 
-.canonicalpartners, .dpkg, .wget, .ubuntu, .google, .nonfree, .steam{
-	text-decoration: line-through;
+.canonicalpartners,.dpkg,.wget,.ubuntu,.google,.nonfree,.steam {
+    text-decoration:line-through
 }
 
 .terminal {
-	color:lime;
-	background-color: black;
-	font-family: "Share Tech Mono", monospace;
+    color:lime;
+    background-color:#000;
+    font-family:"Share Tech Mono",monospace;
+    max-width:500px
 }
 
-.distrochoice{
-	height:128px;
-	width:128px;
-	margin:4px;
-	float:left;
+.distrochoice {
+    height:128px;
+    width:128px;
+    margin:4px;
+    float:left
 }
-
