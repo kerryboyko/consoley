@@ -244,11 +244,18 @@
         "pakName": "gnome",
         "description": "GNOME Window Environment"
     },
-    "kde-plasma-desktop": {
+    "kubuntu-desktop": {
         "repo": "aptget",
-        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu32 linuxmint32",
+        "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "KDE",
         "pakName": "kde-plasma-desktop",
+        "description": "KDE Window Environment (Basic)"
+    },
+    "kde-full": {
+        "repo": "aptget",
+        "distros": "debian64 debian32",
+        "engName": "KDE",
+        "pakName": "kde-full",
         "description": "KDE Window Environment (Basic)"
     },
     "lxde": {
@@ -272,11 +279,11 @@
         "pakName": "mate-desktop-environment",
         "description": "MATE Window Environment"
     },
-    "xfce": {
+    "xfce4": {
         "repo": "aptget",
         "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu32 linuxmint32",
-        "engName": "XFCE",
-        "pakName": "xfce",
+        "engName": "XFCE 4",
+        "pakName": "xfce4",
         "description": "XFCE Window Environment (Lightweight)"
     },
     "Multimedia:": {
