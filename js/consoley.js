@@ -4,7 +4,7 @@ var listOfPackages = [];
 var jsonLoad = function() {
 
 
-    $.getJSON("http://brianboyko.github.io/consoley/packages.json",
+    $.getJSON("https://brianboyko.github.io/consoley/packages.json",
         function(data) {
             var items = [];
             $.each(data, function(key, val) {
