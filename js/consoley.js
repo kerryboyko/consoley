@@ -11,9 +11,9 @@ var jsonLoad = function() {
                 items.push("<h3>" + val.engName + "</h3>");
             } else {
                 items.push('<img src="images/' + val.pakName +
-                    '.png" />' + '<input class="' + val.repo +
+                    '.png" />' + '<input class="' + val.distros +
                     '" type="checkbox" id="' + val.pakName +
-                    '">' + '<span class="' + val.repo +'">' + val.engName + '</span></input>' + '<p>' +
+                    '">' + '<span class="' + val.distros +'">' + val.engName + '</span></input>' + '<p class="'+ val.distros + '">' +
                     val.description + '</p><br />');
             }
         });
