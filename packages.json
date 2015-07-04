@@ -139,11 +139,11 @@
         "pakName": "",
         "description": ""
     },
-    "mozilla-thunderbird": {
+    "thunderbird": {
         "repo": "aptget",
         "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "Thunderbird",
-        "pakName": "mozilla-thunderbird",
+        "pakName": "hunderbird",
         "description": "Powerful Email/NNTP/RSS client"
     },
     "icedove": {
