@@ -5,23 +5,18 @@ var jsonLoad = function(distro) {
     console.log("startJsonLoad");
 
     $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(data){
-        console.log(data);
         var items = [];
-        console.log(items);
         $.each(data, function(key, val) {
             if (val.repo == "heading") {
                 items.push("<h3>" + val.engName + "</h3>");
-                console.log(JSON.stringify(val));
             } else if (val.distros.indexOf(distro) != -1) {
                 items.push('<img src="images/' + val.pakName +
                     '.png" />' + '<input class="' + val.repo +
                     '" type="checkbox" id="' + val.pakName +
                     '">' + val.engName + '</input>' + '<p>' +
                     val.description + '</p><br />');
-                console.log(JSON.stringify(val));
             }
         });
-        console.log(items);
         $("<ul/>", {
             "class": "my-new-list",
             html: items.join("")
@@ -37,7 +32,6 @@ var jsonLoad = function(distro) {
 
 window.onload = function() {
     var debian = document.getElementById('debian64');
-    console.log(debian);
     debian.addEventListener("click", function(){
         document.getElementById('checkboxes').innerHTML = "&nbsp;";
         document.getElementById("installCode").innerHTML = "&nbsp;";
@@ -46,7 +40,6 @@ window.onload = function() {
 
 
     var ubuntu = document.getElementById('ubuntu64');
-    console.log(ubuntu);
     ubuntu.addEventListener("click", function(){
         document.getElementById('checkboxes').innerHTML = "&nbsp;";
         document.getElementById("installCode").innerHTML = "&nbsp;";
@@ -55,24 +48,24 @@ window.onload = function() {
 
 
     var linuxmint = document.getElementById('linuxmint64');
-    console.log(linuxmint);
     linuxmint.addEventListener("click", function(){
         document.getElementById('checkboxes').innerHTML = "&nbsp;";
         document.getElementById("installCode").innerHTML = "&nbsp;";
         jsonLoad("linuxmint");
     }, true);
 
-var wrap = $("#terminal-container");
+var elementPosition = $('#terminal-container').offset();
+console.log(elementPosition);
 
-wrap.on("scroll", function(e) {
-    
-  if (this.scrollTop > 200) {
-    wrap.addClass("fixed");
-  } else {
-    wrap.removeClass("fixed");
-  }
-  
+$(window).scroll(function(){
+    console.log("scrolling");
+        if($(window).scrollTop() > elementPosition.top){
+              $('#terminal-container').css('position','fixed').css('top','0');
+        } else {
+            $('#terminal-container').css('position','static');
+        }    
 });
+
 
 
 };
@@ -94,6 +87,4 @@ function generateApt(ev) {
         document.getElementById("installCode").innerHTML = "&nbsp;";
     }
 };
-
-
 
