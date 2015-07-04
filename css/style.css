@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers";
+@import http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers;
 
 body {
     background-color:#A4E3FF
@@ -6,7 +6,7 @@ body {
 
 p {
     font-family:"Lato",Helvetica,Arial,sans;
-    font-size:14px;
+    font-size:14px
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -16,15 +16,15 @@ h1,h2,h3,h4,h5,h6 {
     text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,5px 5px 2px #888
 }
 
-h1{
-	font-size:50px;
+h1 {
+    font-size:50px
 }
 
 .pitch {
     font-family:"Lato",Helvetica,Arial,sans;
     font-size:20px;
     text-align:center;
-    padding:0px 20px;
+    padding:0 20px
 }
 
 .aptget {
@@ -50,7 +50,7 @@ h1{
 }
 
 .main-container {
-	max-width:90%;
-	width:800px;
-	margin:auto;
+    max-width:90%;
+    width:800px;
+    margin:auto
 }

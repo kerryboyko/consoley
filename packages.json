@@ -418,14 +418,14 @@
         "engName": "Chromium",
         "pakName": "chromium-browser",
         "description": "Chromium Web Browser (FLOSS-only Chrome fork)"
-    },    
+    },
     "chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra flashplugin-installer": {
         "repo": "aptget",
         "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "Video and Flash extensions for Chromium",
         "pakName": "chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra flashplugin-installer",
         "description": "With these plugins, Chromium retains all the functionality you would get from the official version of Google Chrome."
-    },   
+    },
     "chromium-browser": {
         "repo": "aptget",
         "distros": "debian64 debian32",

@@ -9,71 +9,96 @@
 </head>
 
 <body>
-<div class="main-container">
-    <h1>Consoley!</h1>
+    <div class="main-container">
+        <h1>Consoley!</h1>
 
-    <p><em>v. 0.003 alpha</em></p>
+        <p><em>v. 0.003 alpha</em></p>
 
-    <p>This is Consoley, a tookit for beginning Linux users that allows them to install some of the most popular programs for Linux with a single action</P>
+        <p>This is Consoley, a tookit for beginning Linux users that allows
+        them to install some of the most popular programs for Linux with a
+        single action</p>
 
-    <H3>How to use Consoley</h3>
-    <p>First, choose your distribution. Right now, Consoley supports Linux Mint, Ubuntu based-distributions, and Debian. This will generate a list of programs you can use to get started.</p>
-    <P>Next, browse through the list, and click on any programs you want to install.  When you've selected all the programs you want, go ahead and copy the code in the "code" window, and just paste it into a terminal. It will prompt you for your root password and ask you if you want to install - just type "y" (for "yes") and hit enter.  You're on your way.</P>
-    <H3>How does it work?</H3>
-    <P>Consoley isn't really all that magical. The <i>real</i> magic happens because of the apt-get repositories - part of Debian-based Linux installations. This allows you to install any program that Debian knows of simply by calling it's name.  Any dependencies (programs you need to install before you install the program you want to install!) are configured automatically!  Neat!</P>
-    <hr>
-    <div class="pitch">If you like this tool, please check out <a href=
-    "https://sendthisguytocodecamp.com">SendThisGuyToCodeCamp.com</a>, where I'm crowdfunding money to attend coding school - and when I graduate, I'll pay the amount forward to the next person.</div>
-    <hr>
+        <h3>How to use Consoley</h3>
 
-    <p>Select your distribution</p>
+        <p>First, choose your distribution. Right now, Consoley supports Linux
+        Mint, Ubuntu based-distributions, and Debian. This will generate a list
+        of programs you can use to get started.</p>
 
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-        id="menu1" type="button">Please Select Your Distribution <span class=
-        "caret"></span></button>
+        <p>Next, browse through the list, and click on any programs you want to
+        install. When you've selected all the programs you want, go ahead and
+        copy the code in the "code" window, and just paste it into a terminal.
+        It will prompt you for your root password and ask you if you want to
+        install - just type "y" (for "yes") and hit enter. You're on your
+        way.</p>
 
-        <ul class="dropdown-menu">
-            <li id="debian64">
-                <a href="#">Debian 64-bit</a>
-            </li>
+        <h3>How does it work?</h3>
 
-            <li id="debian32">
-                <a href="#">Debian 32-bit</a>
-            </li>
+        <p>Consoley isn't really all that magical. The <i>real</i> magic
+        happens because of the apt-get repositories - part of Debian-based
+        Linux installations. This allows you to install any program that Debian
+        knows of simply by calling it's name. Any dependencies (programs you
+        need to install before you install the program you want to install!)
+        are configured automatically! Neat!</p>
+        <hr>
 
-            <li class="divider"></li>
+        <div class="pitch">
+            If you like this tool, please check out <a href=
+            "https://sendthisguytocodecamp.com">SendThisGuyToCodeCamp.com</a>,
+            where I'm crowdfunding money to attend coding school - and when I
+            graduate, I'll pay the amount forward to the next person.
+        </div>
+        <hr>
 
-            <li id="ubuntu64">
-                <a href="#">Ubuntu 64-bit</a>
-            </li>
+        <p>Select your distribution</p>
 
-            <li id="ubuntu32">
-                <a href="#">Ubuntu 32-bit</a>
-            </li>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle=
+            "dropdown" id="menu1" type="button">Please Select Your Distribution
+            <span class="caret"></span></button>
 
-            <li class="divider"></li>
+            <ul class="dropdown-menu">
+                <li id="debian64">
+                    <a href="#">Debian 64-bit</a>
+                </li>
 
-            <li id="linuxmint64">
-                <a href="#">Linux Mint 64-bit</a>
-            </li>
+                <li id="debian32">
+                    <a href="#">Debian 32-bit</a>
+                </li>
 
-            <li id="linuxmint32">
-                <a href="#">Linux Mint 32-bit</a>
-            </li>
-        </ul>
-    </div>
+                <li class="divider"></li>
 
-    <p>Copy this code &amp; run it in the terminal:</p>
+                <li id="ubuntu64">
+                    <a href="#">Ubuntu 64-bit</a>
+                </li>
 
-    <div class="terminal" id="installCode">
-        &nbsp;
-    </div>
+                <li id="ubuntu32">
+                    <a href="#">Ubuntu 32-bit</a>
+                </li>
 
-    <form id="checkboxes" name="checkboxes"></form><script src=
+                <li class="divider"></li>
+
+                <li id="linuxmint64">
+                    <a href="#">Linux Mint 64-bit</a>
+                </li>
+
+                <li id="linuxmint32">
+                    <a href="#">Linux Mint 32-bit</a>
+                </li>
+            </ul>
+        </div>
+
+        <p>Copy this code &amp; run it in the terminal:</p>
+
+        <div class="terminal" id="installCode">
+            &nbsp;
+        </div>
+
+        <form id="checkboxes" name="checkboxes"></form>
+    </div><a href="https://github.com/brianboyko/consoley"><img alt=
+    "Fork me on GitHub" data-canonical-src=
+    "https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" src=
+    "https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+    style="position: absolute; top: 0; right: 0; border: 0;"></a><script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <script src="js/bootstrap.js" type="text/javascript"></script> <script src="js/consoley.js" type="text/javascript"></script> 
-    </div>
-
-    <a href="https://github.com/brianboyko/consoley"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 </body>
 </html>
