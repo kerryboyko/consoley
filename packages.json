@@ -143,7 +143,7 @@
         "repo": "aptget",
         "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "Thunderbird",
-        "pakName": "hunderbird",
+        "pakName": "thunderbird",
         "description": "Powerful Email/NNTP/RSS client"
     },
     "icedove": {
