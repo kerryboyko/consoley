@@ -1,4 +1,4 @@
-@import http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers;
+@import url('http://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono|Bangers');
 
 body {
     background-color:#A4E3FF
@@ -31,22 +31,11 @@ h1 {
     color:blue
 }
 
-.canonicalpartners,.dpkg,.wget,.ubuntu,.google,.nonfree,.steam {
-    text-decoration:line-through
-}
-
 .terminal {
     color:lime;
     background-color:#000;
     font-family:"Share Tech Mono",monospace;
     max-width:500px
-}
-
-.distrochoice {
-    height:128px;
-    width:128px;
-    margin:4px;
-    float:left
 }
 
 .main-container {

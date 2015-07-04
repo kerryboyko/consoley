@@ -1,37 +1,39 @@
 var aptgetString = "sudo apt-get install ";
 var listOfPackages = [];
 
+
 var jsonLoad = function() {
+    console.log("startJsonLoad");
 
-
-    $.getJSON("https://brianboyko.github.io/consoley/packages.json",
-        function(data) {
-            var items = [];
-            $.each(data, function(key, val) {
-                if (val.repo == "heading") {
-                    items.push("<h3>" + val.engName + "</h3>");
-                } else {
-                    items.push('<img src="images/' + val.pakName +
-                        '.png" />' + '<input class="' + val
-                        .repo + ' ' + val.distros +
-                        '" type="checkbox" id="' + val.pakName +
-                        '">' + '<span class="' + val.repo +
-                        ' ' + val.distros + '">' + val.engName +
-                        '</span></input>' + '<p class="' +
-                        val.repo + ' ' + val.distros + '">' +
-                        val.description + '</p><br />');
-                }
-            });
-            $("<ul/>", {
-                "class": "my-new-list",
-                html: items.join("")
-            }).appendTo(document.getElementById('checkboxes'));
+    $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(data) {
+        var items = [];
+        console.log(items);
+        $.each(data, function(key, val) {
+            if (val.repo == "heading") {
+                items.push("<h3>" + val.engName + "</h3>");
+            } else {
+                items.push('<img src="images/' + val.pakName +
+                    '.png" />' + '<input class="' + val.repo +
+                    '" type="checkbox" id="' + val.pakName +
+                    '">' + val.engName + '</input>' + '<p>' +
+                    val.description + '</p><br />');
+            }
         });
+        console.log(items);
+        $("<ul/>", {
+            "class": "my-new-list",
+            html: items.join("")
+        }).appendTo(document.getElementById('checkboxes'));
+    });
 
 };
 
+
+
 window.onload = function() {
+    console.log("onload");
     jsonLoad();
+    console.log("jsonLoad just executed");
     var boxes = document.forms.checkboxes;
     var elements = document.getElementsByClassName('aptget');
     boxes.addEventListener("click", generateApt, true);
