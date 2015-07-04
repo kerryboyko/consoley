@@ -24,7 +24,12 @@ h1 {
     font-family:"Lato",Helvetica,Arial,sans;
     font-size:20px;
     text-align:center;
-    padding:0 20px
+    padding:20px 20px;
+    margin:auto;
+    width:calc(100% - 100px);
+        background-color:rgba(255, 255, 255, .5);
+        border: 1px solid red;
+
 }
 
 .aptget {
@@ -33,13 +38,52 @@ h1 {
 
 .terminal {
     color:lime;
-    background-color:#000;
+    background-color:rgba(0, 0, 0, .5);
     font-family:"Share Tech Mono",monospace;
-    max-width:500px
+    max-width:500px;
+    width:400px;
+    height:300px;
+    border: 1px solid lime ;
+}
+
+
+.terminal-container {
+    font-family:"Lato", Helvetica, Arial, sans;
+    max-width:350px;
+    width:350px;
+    display:block;
 }
 
 .main-container {
-    max-width:90%;
-    width:800px;
-    margin:auto
+margin:10px 20px;
+}
+
+.instructions{
+	padding: 0px 20px 0px 0px;
+	margin:0px 20px 0px 0px;
+	width:400px;
+	max-width:50%;
+	float:left;
+	min-height:calc(100% - 100px);
+}
+
+.generator{
+		padding: 0px 20px 0px 30px;
+	margin:0px 30px 0px px;
+	margin-left:440px;
+		border-left: 3px dotted black;
+		min-height:calc(100vh - 100px);
+}
+
+.radio-buttons{
+	    font-family:"Bangers","Lato",Helvetica,Arial,sans;
+    letter-spacing:2px;
+    color:#ff0;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,5px 5px 2px #888;
+    font-size:20px;
+}
+
+.fixed{
+	position:fixed;
+    top: 10px;
 }

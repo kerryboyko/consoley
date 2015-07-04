@@ -412,12 +412,12 @@
         "pakName": "mozilla-firefox",
         "description": "Mozilla Firefox"
     },
-    "chromium": {
+    "chromium-browser": {
         "repo": "aptget",
         "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "Chromium",
         "pakName": "chromium-browser",
-        "description": "Chromium Web Browser (FLOSS-only Chrome fork)"
+        "description": "Chromium Web Browser (FLOSS-only Chrome fork) (Ubuntu)"
     },
     "chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra flashplugin-installer": {
         "repo": "aptget",
@@ -426,19 +426,19 @@
         "pakName": "chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra flashplugin-installer",
         "description": "With these plugins, Chromium retains all the functionality you would get from the official version of Google Chrome."
     },
-    "chromium-browser": {
+    "chromium": {
         "repo": "aptget",
         "distros": "debian64 debian32",
         "engName": "Chromium",
-        "pakName": "chromium-browser",
-        "description": "Chromium Web Browser (FLOSS-only Chrome fork)"
+        "pakName": "chromium",
+        "description": "Chromium Web Browser (FLOSS-only Chrome fork) (Debian)"
     },
     "iceweasel": {
         "repo": "aptget",
         "distros": "debian64 debian32",
         "engName": "IceWeasel",
         "pakName": "iceweasel",
-        "description": "IceWeasel Web Browser (FLOSE-only Firefox fork)"
+        "description": "IceWeasel Web Browser (FLOSS-only Firefox fork)"
     },
     "epiphany-browser": {
         "repo": "aptget",
