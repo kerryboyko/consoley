@@ -5,7 +5,8 @@ body {
 }
 
 p {
-    font-family:"Lato",Helvetica,Arial,sans
+    font-family:"Lato",Helvetica,Arial,sans;
+    font-size:14px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,6 +14,17 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing:2px;
     color:#ff0;
     text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,5px 5px 2px #888
+}
+
+h1{
+	font-size:50px;
+}
+
+.pitch {
+    font-family:"Lato",Helvetica,Arial,sans;
+    font-size:20px;
+    text-align:center;
+    padding:0px 20px;
 }
 
 .aptget {
@@ -35,4 +47,10 @@ h1,h2,h3,h4,h5,h6 {
     width:128px;
     margin:4px;
     float:left
+}
+
+.main-container {
+	max-width:90%;
+	width:800px;
+	margin:auto;
 }
