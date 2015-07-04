@@ -1,22 +1,24 @@
 var aptgetString = "sudo apt-get install ";
 var listOfPackages = [];
 
-
 var jsonLoad = function() {
     console.log("startJsonLoad");
 
-    $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(data) {
+    $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(data){
+        console.log(data);
         var items = [];
         console.log(items);
         $.each(data, function(key, val) {
             if (val.repo == "heading") {
                 items.push("<h3>" + val.engName + "</h3>");
+                console.log(JSON.stringify(val));
             } else {
                 items.push('<img src="images/' + val.pakName +
                     '.png" />' + '<input class="' + val.repo +
                     '" type="checkbox" id="' + val.pakName +
                     '">' + val.engName + '</input>' + '<p>' +
                     val.description + '</p><br />');
+                console.log(JSON.stringify(val));
             }
         });
         console.log(items);
@@ -27,7 +29,6 @@ var jsonLoad = function() {
     });
 
 };
-
 
 
 window.onload = function() {
