@@ -1,464 +1,541 @@
 {
-  "Communication:": {
-    "repo":"heading",
-    "engName":"Communication:",
-    "pakName":"",
-    "description":""
-  },
-  "skype": {
-    "repo":"canonicalpartners",
-    "engName":"Skype (Non-Free)",
-    "pakName":"skype",
-    "description":"Audio and video telephone service from Microsoft"
-  },
-  "kopete": {
-    "repo":"aptget",
-    "engName":"Kopete",
-    "pakName":"kopete",
-    "description":"Instant Messaging Client (KDE base)"
-  },
-  "pidgin": {
-    "repo":"aptget",
-    "engName":"Pidgin",
-    "pakName":"pidgin",
-    "description":"Instant Messaging Client (GNOME base)"
-  },
-  "xchat": {
-    "repo":"aptget",
-    "engName":"X-chat",
-    "pakName":"xchat",
-    "description":"Internet Relay Chat (IRC) client"
-  },
-  "empathy": {
-    "repo":"aptget",
-    "engName":"Empathy",
-    "pakName":"empathy",
-    "description":"Text/Voice/Video multi-protocol communication client that works with Google Talk"
-  },
-  "Editors:": {
-    "repo":"heading",
-    "engName":"Editors:",
-    "pakName":"",
-    "description":""
-  },
-  "ed": {
-    "repo":"aptget",
-    "engName":"Ed",
-    "pakName":"ed",
-    "description":"Very basic Unix console text editor"
-  },
-  "emacs": {
-    "repo":"aptget",
-    "engName":"Emacs",
-    "pakName":"emacs",
-    "description":"Very complex (but powerful) Unix console editor"
-  },
-  "focuswriter": {
-    "repo":"aptget",
-    "engName":"Focuswriter",
-    "pakName":"focuswriter",
-    "description":"Distraction-free full-screen text editor"
-  },
-  "kate": {
-    "repo":"aptget",
-    "engName":"Kate",
-    "pakName":"kate",
-    "description":"GUI-based text editor with highlighting for programmers (KDE base)"
-  },
-  "kwrite": {
-    "repo":"aptget",
-    "engName":"kWrite",
-    "pakName":"kwrite",
-    "description":"GUI-based text editor (KDE base)"
-  },
-  "mousepad": {
-    "repo":"aptget",
-    "engName":"mousepad",
-    "pakName":"mousepad",
-    "description":"GUI-based text editor (GNOME base)"
-  },
-  "nano": {
-    "repo":"aptget",
-    "engName":"Nano",
-    "pakName":"nano",
-    "description":"Very simple console text editor"
-  },
-  "vim": {
-    "repo":"aptget",
-    "engName":"Vim",
-    "pakName":"vim",
-    "description":"Very complex (but powerful) Unix console editor"
-  },
-  "gedit": {
-    "repo":"aptget",
-    "engName":"gEdit",
-    "pakName":"gedit",
-    "description":"GUI-based text editor (GNOME base)"
-  },
-  "geany": {
-    "repo":"aptget",
-    "engName":"Geany",
-    "pakName":"geany",
-    "description":"GUI-based text editor with highlighting for programmers (GNOME base)"
-  },
-  "atom": {
-    "repo":"dpkg",
-    "engName":"Atom",
-    "pakName":"atom",
-    "description":"Chromium-based Very Extensible Text Editor"
-  },
-  "sublimetext": {
-    "repo":"wget",
-    "engName":"Sublime Text",
-    "pakName":"sublimetext",
-    "description":"Sublime Text Text Editor"
-  },
-  "Office": {
-    "repo":"heading",
-    "engName":"Office",
-    "pakName":"",
-    "description":""
-  },
-  "abiword": {
-    "repo":"aptget",
-    "engName":"Abiword",
-    "pakName":"abiword",
-    "description":"Word processor with collaborative editing"
-  },
-  "libreoffice": {
-    "repo":"aptget",
-    "engName":"LibreOffice",
-    "pakName":"libreoffice",
-    "description":"Office Suite rivaling Microsoft Office"
-  },
-  "calligra": {
-    "repo":"aptget",
-    "engName":"Calligra",
-    "pakName":"calligra",
-    "description":"Office Suite (KDE Base) "
-  },
-  "Email:": {
-    "repo":"heading",
-    "engName":"Email:",
-    "pakName":"",
-    "description":""
-  },
-  "mozilla-thunderbird": {
-    "repo":"ubuntu",
-    "engName":"Thunderbird",
-    "pakName":"mozilla-thunderbird",
-    "description":"Powerful Email/NNTP/RSS client"
-  },
-  "icedove": {
-    "repo":"aptget",
-    "engName":"IceDove",
-    "pakName":"icedove",
-    "description":"Powerful Email/NNTP/RSS client – (FLOSS-only Thunderbird fork)"
-  },
-  "claws-mail": {
-    "repo":"aptget",
-    "engName":"Claws",
-    "pakName":"claws-mail",
-    "description":"E-mail client"
-  },
-  "geary": {
-    "repo":"aptget",
-    "engName":"Geary",
-    "pakName":"geary",
-    "description":"E-mail client with emphasis on user interface"
-  },
-  "gmail-notify": {
-    "repo":"aptget",
-    "engName":"Gmail-notify",
-    "pakName":"gmail-notify",
-    "description":"Notification program for new Gmail"
-  },
-  "kmail": {
-    "repo":"aptget",
-    "engName":"kMail",
-    "pakName":"kmail",
-    "description":"E-mail client (KDE base)"
-  },
-  "sylpheed": {
-    "repo":"aptget",
-    "engName":"Sylpheed",
-    "pakName":"sylpheed",
-    "description":"Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client."
-  },
-  "Graphics and Design:": {
-    "repo":"heading",
-    "engName":"Graphics and Design:",
-    "pakName":"",
-    "description":""
-  },
-  "gimp": {
-    "repo":"aptget",
-    "engName":"GIMP (Gnu Image Manipulation Program)",
-    "pakName":"gimp",
-    "description":"Powerful bitmap-based picture editor (Comparable to Photoshop)"
-  },
-  "gnome-paint": {
-    "repo":"aptget",
-    "engName":"Gnome-paint",
-    "pakName":"gnome-paint",
-    "description":"Bitmap based basic picture editor"
-  },
-  "inkscape": {
-    "repo":"aptget",
-    "engName":"Inkscape",
-    "pakName":"inkscape",
-    "description":"Vector-based image editor (Comparable to Illustrator)"
-  },
-  "scribus": {
-    "repo":"aptget",
-    "engName":"Scribus",
-    "pakName":"scribus",
-    "description":"Page Layout and Composition Software (Comparable to InDesign/Quark)"
-  },
-  "tuxpaint": {
-    "repo":"aptget",
-    "engName":"Tuxpaint",
-    "pakName":"tuxpaint",
-    "description":"Bitmap based picture editor designed for kids."
-  },
-  "Window Environments:": {
-    "repo":"heading",
-    "engName":"Window Environments:",
-    "pakName":"",
-    "description":""
-  },
-  "gnome": {
-    "repo":"aptget",
-    "engName":"Gnome",
-    "pakName":"gnome",
-    "description":"GNOME Window Environment"
-  },
-  "kde-standard": {
-    "repo":"aptget",
-    "engName":"KDE",
-    "pakName":"kde-standard",
-    "description":"KDE Window Environment"
-  },
-  "lxde": {
-    "repo":"aptget",
-    "engName":"LXDE",
-    "pakName":"lxde",
-    "description":"LXDE Window Environment (Lightweight)"
-  },
-  "cinnamon": {
-    "repo":"aptget",
-    "engName":"Cinnamon",
-    "pakName":"cinnamon",
-    "description":"Cinnamon Window Environment "
-  },
-  "mate": {
-    "repo":"aptget",
-    "engName":"MATE",
-    "pakName":"mate",
-    "description":"MATE Window Environment"
-  },
-  "xfce": {
-    "repo":"aptget",
-    "engName":"XFCE",
-    "pakName":"xfce",
-    "description":"XFCE Window Environment (Lightweight)"
-  },
-  "Multimedia:": {
-    "repo":"heading",
-    "engName":"Multimedia:",
-    "pakName":"",
-    "description":""
-  },
-  "audacity": {
-    "repo":"aptget",
-    "engName":"Audacity",
-    "pakName":"audacity",
-    "description":"Powerful audio editor"
-  },
-  "vlc": {
-    "repo":"aptget",
-    "engName":"VLC",
-    "pakName":"vlc",
-    "description":"Multi-format video player"
-  },
-  "banshee": {
-    "repo":"aptget",
-    "engName":"Banshee",
-    "pakName":"banshee",
-    "description":"MP3 player (like iTunes)"
-  },
-  "clementine": {
-    "repo":"aptget",
-    "engName":"Clementine",
-    "pakName":"clementine",
-    "description":"MP3 player (like iTunes)"
-  },
-  "exaile": {
-    "repo":"aptget",
-    "engName":"Exaile",
-    "pakName":"exaile",
-    "description":"MP3 player (like iTunes, GNOME base)"
-  },
-  "gtkpod": {
-    "repo":"aptget",
-    "engName":"GTKpod",
-    "pakName":"gtkpod",
-    "description":"Program to connect/sync Apple iPods"
-  },
-  "kdenlive": {
-    "repo":"aptget",
-    "engName":"Kdenlive",
-    "pakName":"kdenlive",
-    "description":"Powerful Video Editor"
-  },
-  "rhythmbox": {
-    "repo":"aptget",
-    "engName":"Rhythmbox",
-    "pakName":"rhythmbox",
-    "description":"MP3 player (like iTunes)"
-  },
-  "handbrake": {
-    "repo":"aptget",
-    "engName":"Handbrake",
-    "pakName":"handbrake",
-    "description":"Video Transcoder"
-  },
-  "Programming - WebDev:": {
-    "repo":"heading",
-    "engName":"Programming - WebDev:",
-    "pakName":"",
-    "description":""
-  },
-  "git": {
-    "repo":"aptget",
-    "engName":"Git",
-    "pakName":"git",
-    "description":"Git version control software, works with GitHub"
-  },
-  "ruby ruby-dev": {
-    "repo":"aptget",
-    "engName":"Ruby-Dev",
-    "pakName":"ruby ruby-dev",
-    "description":"Ruby and Ruby Dev Tools"
-  },
-  "python python-dev": {
-    "repo":"aptget",
-    "engName":"Python-Dev",
-    "pakName":"python python-dev",
-    "description":"Python and Python Dev Tools"
-  },
-  "nodejs nodejs-dev npm": {
-    "repo":"aptget",
-    "engName":"Node.JS-Dev",
-    "pakName":"nodejs nodejs-dev npm",
-    "description":"Node.JS and Node.JS Dev Tools"
-  },
-  "bluefish": {
-    "repo":"aptget",
-    "engName":"Bluefish",
-    "pakName":"bluefish",
-    "description":"WYSIWYG HTML Editor"
-  },
-  "monodevelop": {
-    "repo":"aptget",
-    "engName":"Mono-Dev",
-    "pakName":"monodevelop",
-    "description":"Development for Mono, open-source .NET implimentation"
-  },
-  "Web Browsers:": {
-    "repo":"heading",
-    "engName":"Web Browsers:",
-    "pakName":"",
-    "description":""
-  },
-  "chrome": {
-    "repo":"google",
-    "engName":"Chrome",
-    "pakName":"chrome",
-    "description":"Google Chrome"
-  },
-  "mozilla-firefox": {
-    "repo":"ubuntu",
-    "engName":"Firefox",
-    "pakName":"mozilla-firefox",
-    "description":"Mozilla Firefox"
-  },
-  "chromium": {
-    "repo":"aptget",
-    "engName":"Chromium",
-    "pakName":"chromium",
-    "description":"Chromium Web Browser (FLOSS-only Chrome fork)"
-  },
-  "iceweasel": {
-    "repo":"aptget",
-    "engName":"IceWeasel",
-    "pakName":"iceweasel",
-    "description":"IceWeasel Web Browser (FLOSE-only Firefox fork)"
-  },
-  "epiphany-browser": {
-    "repo":"aptget",
-    "engName":"Ephiphany",
-    "pakName":"epiphany-browser",
-    "description":"Web Broweser based on WebKit"
-  },
-  "qupzilla": {
-    "repo":"aptget",
-    "engName":"Qupzilla",
-    "pakName":"qupzilla",
-    "description":"Lightweight Web Browser"
-  },
-  "Utilities:": {
-    "repo":"heading",
-    "engName":"Utilities:",
-    "pakName":"",
-    "description":""
-  },
-  "pepperflashplugin-nonfree": {
-    "repo":"nonfree",
-    "engName":"Pepper Flash Player",
-    "pakName":"pepperflashplugin-nonfree",
-    "description":"Google-maintained Flash player (non-free) for use with Chromium/Chrome"
-  },
-  "synaptic": {
-    "repo":"aptget",
-    "engName":"Synaptic",
-    "pakName":"synaptic",
-    "description":"Graphical package manager for Debian Apt-Get Packages"
-  },
-  "brasero": {
-    "repo":"aptget",
-    "engName":"Brasero",
-    "pakName":"brasero",
-    "description":"CD & DVD Burner software"
-  },
-  "qbittorrent": {
-    "repo":"aptget",
-    "engName":"QbitTorrent",
-    "pakName":"qbittorrent",
-    "description":"Torrent File Manager/Downloader"
-  },
-  "steam": {
-    "repo":"steam",
-    "engName":"Steam",
-    "pakName":"steam",
-    "description":"Valve Steam Game Manager/Downloader"
-  },
-  "gparted": {
-    "repo":"aptget",
-    "engName":"Gparted",
-    "pakName":"gparted",
-    "description":"Partition Editor"
-  },
-  "virtualbox": {
-    "repo":"aptget",
-    "engName":"Virtualbox",
-    "pakName":"virtualbox",
-    "description":"Open-Source Virtualization Software "
-  },
-  "teamviewer": {
-    "repo":"aptget",
-    "engName":"TeamViewer",
-    "pakName":"teamviewer",
-    "description":"PC Remote Control/Access software"
-  }
+    "Communication:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Communication:",
+        "pakName": "",
+        "description": ""
+    },
+    "skype": {
+        "repo": "canonicalpartners",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Skype (Non-Free)",
+        "pakName": "skype",
+        "description": "Audio and video telephone service from Microsoft"
+    },
+    "kopete": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Kopete",
+        "pakName": "kopete",
+        "description": "Instant Messaging Client (KDE base)"
+    },
+    "pidgin": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Pidgin",
+        "pakName": "pidgin",
+        "description": "Instant Messaging Client (GNOME base)"
+    },
+    "xchat": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "X-chat",
+        "pakName": "xchat",
+        "description": "Internet Relay Chat (IRC) client"
+    },
+    "empathy": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Empathy",
+        "pakName": "empathy",
+        "description": "Text/Voice/Video multi-protocol communication client that works with Google Talk"
+    },
+    "Editors:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Editors:",
+        "pakName": "",
+        "description": ""
+    },
+    "ed": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Ed",
+        "pakName": "ed",
+        "description": "Very basic Unix console text editor"
+    },
+    "emacs": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Emacs",
+        "pakName": "emacs",
+        "description": "Very complex (but powerful) Unix console editor"
+    },
+    "focuswriter": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Focuswriter",
+        "pakName": "focuswriter",
+        "description": "Distraction-free full-screen text editor"
+    },
+    "kate": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Kate",
+        "pakName": "kate",
+        "description": "GUI-based text editor with highlighting for programmers (KDE base)"
+    },
+    "kwrite": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "kWrite",
+        "pakName": "kwrite",
+        "description": "GUI-based text editor (KDE base)"
+    },
+    "mousepad": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "mousepad",
+        "pakName": "mousepad",
+        "description": "GUI-based text editor (GNOME base)"
+    },
+    "nano": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Nano",
+        "pakName": "nano",
+        "description": "Very simple console text editor"
+    },
+    "vim": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Vim",
+        "pakName": "vim",
+        "description": "Very complex (but powerful) Unix console editor"
+    },
+    "gedit": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "gEdit",
+        "pakName": "gedit",
+        "description": "GUI-based text editor (GNOME base)"
+    },
+    "geany": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Geany",
+        "pakName": "geany",
+        "description": "GUI-based text editor with highlighting for programmers (GNOME base)"
+    },
+    "atom": {
+        "repo": "dpkg",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Atom",
+        "pakName": "atom",
+        "description": "Chromium-based Very Extensible Text Editor"
+    },
+    "sublimetext": {
+        "repo": "wget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Sublime Text",
+        "pakName": "sublimetext",
+        "description": "Sublime Text Text Editor"
+    },
+    "Office": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Office",
+        "pakName": "",
+        "description": ""
+    },
+    "abiword": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Abiword",
+        "pakName": "abiword",
+        "description": "Word processor with collaborative editing"
+    },
+    "libreoffice": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "LibreOffice",
+        "pakName": "libreoffice",
+        "description": "Office Suite rivaling Microsoft Office"
+    },
+    "calligra": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Calligra",
+        "pakName": "calligra",
+        "description": "Office Suite (KDE Base) "
+    },
+    "Email:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Email:",
+        "pakName": "",
+        "description": ""
+    },
+    "mozilla-thunderbird": {
+        "repo": "ubuntu",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Thunderbird",
+        "pakName": "mozilla-thunderbird",
+        "description": "Powerful Email/NNTP/RSS client"
+    },
+    "icedove": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "IceDove",
+        "pakName": "icedove",
+        "description": "Powerful Email/NNTP/RSS client – (FLOSS-only Thunderbird fork)"
+    },
+    "claws-mail": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Claws",
+        "pakName": "claws-mail",
+        "description": "E-mail client"
+    },
+    "geary": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Geary",
+        "pakName": "geary",
+        "description": "E-mail client with emphasis on user interface"
+    },
+    "gmail-notify": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Gmail-notify",
+        "pakName": "gmail-notify",
+        "description": "Notification program for new Gmail"
+    },
+    "kmail": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "kMail",
+        "pakName": "kmail",
+        "description": "E-mail client (KDE base)"
+    },
+    "sylpheed": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Sylpheed",
+        "pakName": "sylpheed",
+        "description": "Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client."
+    },
+    "Graphics and Design:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Graphics and Design:",
+        "pakName": "",
+        "description": ""
+    },
+    "gimp": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "GIMP (Gnu Image Manipulation Program)",
+        "pakName": "gimp",
+        "description": "Powerful bitmap-based picture editor (Comparable to Photoshop)"
+    },
+    "gnome-paint": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Gnome-paint",
+        "pakName": "gnome-paint",
+        "description": "Bitmap based basic picture editor"
+    },
+    "inkscape": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Inkscape",
+        "pakName": "inkscape",
+        "description": "Vector-based image editor (Comparable to Illustrator)"
+    },
+    "scribus": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Scribus",
+        "pakName": "scribus",
+        "description": "Page Layout and Composition Software (Comparable to InDesign/Quark)"
+    },
+    "tuxpaint": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Tuxpaint",
+        "pakName": "tuxpaint",
+        "description": "Bitmap based picture editor designed for kids."
+    },
+    "Window Environments:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Window Environments:",
+        "pakName": "",
+        "description": ""
+    },
+    "gnome": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Gnome",
+        "pakName": "gnome",
+        "description": "GNOME Window Environment"
+    },
+    "kde-standard": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "KDE",
+        "pakName": "kde-standard",
+        "description": "KDE Window Environment"
+    },
+    "lxde": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "LXDE",
+        "pakName": "lxde",
+        "description": "LXDE Window Environment (Lightweight)"
+    },
+    "cinnamon": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Cinnamon",
+        "pakName": "cinnamon",
+        "description": "Cinnamon Window Environment "
+    },
+    "mate-desktop-environment": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "MATE",
+        "pakName": "mate-desktop-environment",
+        "description": "MATE Window Environment"
+    },
+    "xfce": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "XFCE",
+        "pakName": "xfce",
+        "description": "XFCE Window Environment (Lightweight)"
+    },
+    "Multimedia:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Multimedia:",
+        "pakName": "",
+        "description": ""
+    },
+    "audacity": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Audacity",
+        "pakName": "audacity",
+        "description": "Powerful audio editor"
+    },
+    "vlc": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "VLC",
+        "pakName": "vlc",
+        "description": "Multi-format video player"
+    },
+    "banshee": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Banshee",
+        "pakName": "banshee",
+        "description": "MP3 player (like iTunes)"
+    },
+    "clementine": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Clementine",
+        "pakName": "clementine",
+        "description": "MP3 player (like iTunes)"
+    },
+    "exaile": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Exaile",
+        "pakName": "exaile",
+        "description": "MP3 player (like iTunes, GNOME base)"
+    },
+    "gtkpod": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "GTKpod",
+        "pakName": "gtkpod",
+        "description": "Program to connect/sync Apple iPods"
+    },
+    "kdenlive": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Kdenlive",
+        "pakName": "kdenlive",
+        "description": "Powerful Video Editor"
+    },
+    "rhythmbox": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Rhythmbox",
+        "pakName": "rhythmbox",
+        "description": "MP3 player (like iTunes)"
+    },
+    "handbrake": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Handbrake",
+        "pakName": "handbrake",
+        "description": "Video Transcoder"
+    },
+    "Programming - WebDev:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Programming - WebDev:",
+        "pakName": "",
+        "description": ""
+    },
+    "git": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Git",
+        "pakName": "git",
+        "description": "Git version control software, works with GitHub"
+    },
+    "ruby ruby-dev": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Ruby-Dev",
+        "pakName": "ruby ruby-dev",
+        "description": "Ruby and Ruby Dev Tools"
+    },
+    "python python-dev": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Python-Dev",
+        "pakName": "python python-dev",
+        "description": "Python and Python Dev Tools"
+    },
+    "nodejs nodejs-dev npm": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Node.JS-Dev",
+        "pakName": "nodejs nodejs-dev npm",
+        "description": "Node.JS and Node.JS Dev Tools"
+    },
+    "bluefish": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Bluefish",
+        "pakName": "bluefish",
+        "description": "WYSIWYG HTML Editor"
+    },
+    "monodevelop": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Mono-Dev",
+        "pakName": "monodevelop",
+        "description": "Development for Mono, open-source .NET implimentation"
+    },
+    "Web Browsers:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Web Browsers:",
+        "pakName": "",
+        "description": ""
+    },
+    "chrome": {
+        "repo": "google",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Chrome",
+        "pakName": "chrome",
+        "description": "Google Chrome"
+    },
+    "mozilla-firefox": {
+        "repo": "ubuntu",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Firefox",
+        "pakName": "mozilla-firefox",
+        "description": "Mozilla Firefox"
+    },
+    "chromium": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Chromium",
+        "pakName": "chromium",
+        "description": "Chromium Web Browser (FLOSS-only Chrome fork)"
+    },
+    "iceweasel": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "IceWeasel",
+        "pakName": "iceweasel",
+        "description": "IceWeasel Web Browser (FLOSE-only Firefox fork)"
+    },
+    "epiphany-browser": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Ephiphany",
+        "pakName": "epiphany-browser",
+        "description": "Web Broweser based on WebKit"
+    },
+    "qupzilla": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Qupzilla",
+        "pakName": "qupzilla",
+        "description": "Lightweight Web Browser"
+    },
+    "Utilities:": {
+        "repo": "heading",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Utilities:",
+        "pakName": "",
+        "description": ""
+    },
+    "pepperflashplugin-nonfree": {
+        "repo": "nonfree",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Pepper Flash Player",
+        "pakName": "pepperflashplugin-nonfree",
+        "description": "Google-maintained Flash player (non-free) for use with Chromium/Chrome"
+    },
+    "synaptic": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Synaptic",
+        "pakName": "synaptic",
+        "description": "Graphical package manager for Debian Apt-Get Packages"
+    },
+    "brasero": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Brasero",
+        "pakName": "brasero",
+        "description": "CD & DVD Burner software"
+    },
+    "qbittorrent": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "QbitTorrent",
+        "pakName": "qbittorrent",
+        "description": "Torrent File Manager/Downloader"
+    },
+    "steam": {
+        "repo": "steam",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Steam",
+        "pakName": "steam",
+        "description": "Valve Steam Game Manager/Downloader"
+    },
+    "gparted": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Gparted",
+        "pakName": "gparted",
+        "description": "Partition Editor"
+    },
+    "virtualbox": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "Virtualbox",
+        "pakName": "virtualbox",
+        "description": "Open-Source Virtualization Software "
+    },
+    "teamviewer": {
+        "repo": "aptget",
+        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu64 linuxmint64",
+        "engName": "TeamViewer",
+        "pakName": "teamviewer",
+        "description": "PC Remote Control/Access software"
+    }
 }

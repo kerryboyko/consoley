@@ -2,7 +2,10 @@
 <HTML>
     
     <head>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
 <link rel="stylesheet" href="css/style.css">
+
 
     </head>
     
@@ -12,7 +15,7 @@
 <P>This is Consoley, a tookit for beginning Debian users, (and users of Debian-based distros, like Ubuntu and Linux Mint), to install some of the most popular and useful programs for Linux.</P>
 
 <P>As you can see, it doesn't work completely! But it will soon!  It generates the code for apt-get packages, but I need to add special code for packages that are not part of the debian apt-get repository. Those have been crossed out for the meantime.</P>
-
+<!--
 <P>Current bugs on Ubuntu 64 bit:</P>
 <code>
 Note, selecting 'mate-desktop-environment' instead of 'mate'<BR>
@@ -106,22 +109,48 @@ E: Unable to locate package teamviewer<BR>
 <BR>E: Unable to locate package xfce
 <BR>E: Package 'chromium' has no installation candidate
 <BR>E: Unable to locate package teamviewer</code>
-
+-->
 
 <P>Click on the checkboxes of the programs you want to install, then copy-and-paste the resulting code into your terminal.  You'll install all these programs in just one shot!</P>
 
 <HR>
 If you like this tool, please check out <a href="https://sendthisguytocodecamp.com">SendThisGuyToCodeCamp.com</a>
 <HR>
+<P>Select your distribution</P>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Please Select Your Distribution
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li id="debian64" role="presentation"><a href="#">Debian 64-bit</a></li>
+      <li id="debian32" role="presentation"><a href="#">Debian 32-bit</a></li>
+            <li role="presentation" class="divider"></li>
+      <li id="ubuntu64" role="presentation"><a href="#">Ubuntu 64-bit</a></li>
+      <li id="ubuntu32" role="presentation"><a href="#">Ubuntu 32-bit</a></li>
+            <li role="presentation" class="divider"></li>      
+      <li id="linuxmint64" role="presentation"><a href="#">Linux Mint 64-bit</a></li>
+      <li id="linuxmint32" role="presentation"><a href="#">Linux Mint 32-bit</a></li>
+    </ul>
+  </div>
+
+
+
 <P>Copy this code &amp; run it in the terminal:</P>
 <div id="installCode" class="terminal">&nbsp;</div>
 
+
+
+</form>
         <form id="checkboxes" name="checkboxes">
 
         </form>
 
 
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    <script type="text/javascript" src="js/consoley.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+    <script type="text/javascript" src="js/consoley.js"></script>
+
 
 </html>
