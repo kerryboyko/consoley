@@ -244,12 +244,12 @@
         "pakName": "gnome",
         "description": "GNOME Window Environment"
     },
-    "kde-standard": {
+    "kde-plasma-desktop": {
         "repo": "aptget",
         "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu32 linuxmint32",
         "engName": "KDE",
-        "pakName": "kde-standard",
-        "description": "KDE Window Environment"
+        "pakName": "kde-plasma-desktop",
+        "description": "KDE Window Environment (Basic)"
     },
     "lxde": {
         "repo": "aptget",
@@ -405,11 +405,11 @@
         "pakName": "",
         "description": ""
     },
-    "mozilla-firefox": {
+    "firefox": {
         "repo": "aptget",
         "distros": "ubuntu64 linuxmint64 ubuntu32 linuxmint32",
         "engName": "Firefox",
-        "pakName": "mozilla-firefox",
+        "pakName": "firefox",
         "description": "Mozilla Firefox"
     },
     "chromium-browser": {
