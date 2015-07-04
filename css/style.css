@@ -42,7 +42,7 @@ h1 {
     font-family:"Share Tech Mono",monospace;
     max-width:500px;
     width:400px;
-    height:300px;
+    min-height:100px;
     border: 1px solid lime ;
 }
 

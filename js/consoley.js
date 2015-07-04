@@ -5,6 +5,7 @@ var jsonLoad = function(distro) {
     console.log("startJsonLoad");
 
     $.getJSON("http://brianboyko.github.io/consoley/packages.json", function(data){
+
         var items = [];
         $.each(data, function(key, val) {
             if (val.repo == "heading") {
@@ -25,7 +26,6 @@ var jsonLoad = function(distro) {
     var boxes = document.forms.checkboxes;
     var elements = document.getElementsByClassName('aptget');
     boxes.addEventListener("click", generateApt, true);
-
 
 };
 
@@ -54,20 +54,6 @@ window.onload = function() {
         jsonLoad("linuxmint");
     }, true);
 
-var elementPosition = $('#terminal-container').offset();
-console.log(elementPosition);
-
-$(window).scroll(function(){
-    console.log("scrolling");
-        if($(window).scrollTop() > elementPosition.top){
-              $('#terminal-container').css('position','fixed').css('top','0');
-        } else {
-            $('#terminal-container').css('position','static');
-        }    
-});
-
-
-
 };
 
 function generateApt(ev) {
@@ -88,3 +74,24 @@ function generateApt(ev) {
     }
 };
 
+function checkAll(bx) {
+  var cbs = document.getElementsByTagName('input');
+  for(var i=0; i < cbs.length; i++) {
+    if(cbs[i].type == 'checkbox') {
+      cbs[i].checked = true;
+    }
+  }
+}
+
+
+var elementPosition = $('#terminal-container').offset();
+console.log(elementPosition);
+
+$(window).scroll(function(){
+    console.log("scrolling");
+        if($(window).scrollTop() > elementPosition.top){
+              $('#terminal-container').css('position','fixed').css('top','0');
+        } else {
+            $('#terminal-container').css('position','static');
+        }    
+});

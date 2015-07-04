@@ -482,13 +482,6 @@
         "pakName": "qbittorrent",
         "description": "Torrent File Manager/Downloader"
     },
-    "steam": {
-        "repo": "steam",
-        "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu32 linuxmint32",
-        "engName": "Steam",
-        "pakName": "steam",
-        "description": "Valve Steam Game Manager/Downloader"
-    },
     "gparted": {
         "repo": "aptget",
         "distros": "debian64 ubuntu64 linuxmint64 debian32 ubuntu32 linuxmint32",
